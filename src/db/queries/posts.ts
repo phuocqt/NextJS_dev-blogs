@@ -1,5 +1,5 @@
-import type { Post } from '@prisma/client';
-import { db } from '@/db';
+import type { Post } from "@prisma/client";
+import db from "@/db";
 
 export type PostWithData = Post & {
   topic: { slug: string };
@@ -36,7 +36,7 @@ export function fetchTopPosts(): Promise<PostWithData[]> {
     orderBy: [
       {
         comments: {
-          _count: 'desc',
+          _count: "desc",
         },
       },
     ],
