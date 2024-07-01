@@ -2,11 +2,13 @@
   "name": "discuss",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://phuocqt.github.io/dev-blogs",
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@auth/core": "0.18.1",
