@@ -30,7 +30,7 @@ export const {
       clientSecret: GOOGLE_CLIENT_SECRET,
     }),
   ],
-  secret: "fesfsdefwsfsdfsdf",
+  secret: "7eadbf338c0e712be7afc48f69952f3c",
   callbacks: {
     // Usually not needed, here we are fixing a bug in nextauth
     async session({ session, user }: any) {
